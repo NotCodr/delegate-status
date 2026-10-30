@@ -1,4 +1,6 @@
 {
-  "since": null,
-  "days": {}
+  "since": "2026-10-30",
+  "days": {
+    "2026-10-30": {"app":{"checks":1,"up":1,"degraded":0,"down":0,"median":340,"downMin":0},"api":{"checks":1,"up":1,"degraded":0,"down":0,"median":297,"downMin":0},"site":{"checks":1,"up":1,"degraded":0,"down":0,"median":302,"downMin":0}}
+  }
 }

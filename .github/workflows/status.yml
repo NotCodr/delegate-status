@@ -1,0 +1,81 @@
+# Every five minutes: check, render, publish, then save the record. GitHub runs scheduled jobs on a
+# best-effort basis, so a run can start late or occasionally be skipped; the page says "about every
+# five minutes" for that reason. The record lives in data/ and every run adds to it; the page is
+# rebuilt from the record each time and published straight to Pages (a site published by its own
+# Actions workflow is not subject to the ten-builds-an-hour limit).
+
+name: Status
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - "site/**"
+      - "config.json"
+      - ".github/workflows/status.yml"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  issues: write
+
+# One run at a time, and never cancel one half way: two runs writing data/ at once would race.
+concurrency:
+  group: status
+  cancel-in-progress: false
+
+jobs:
+  status:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+
+      - name: Check
+        run: node scripts/check.mjs
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+
+      - name: Render
+        run: node scripts/render.mjs
+
+      # Publish before saving, so a failed push of the record never holds the page back. A push that
+      # keeps failing still turns the run red, which is where it gets noticed.
+      - uses: actions/configure-pages@v6
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+      - id: deploy
+        uses: actions/deploy-pages@v5
+
+      - name: Save the record
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "Nothing new to record."
+            exit 0
+          fi
+          git commit -q -m "Record checks $(date -u +%Y-%m-%dT%H:%MZ)"
+          for attempt in 1 2 3; do
+            if git push -q; then exit 0; fi
+            git pull -q --rebase --depth=50 origin main || true
+            sleep 5
+          done
+          echo "Could not push the record after three tries." >&2
+          exit 1

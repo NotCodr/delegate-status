@@ -1,0 +1,45 @@
+{
+  "site": "https://status.delegateau.com/",
+  "retainDays": 8,
+  "defaults": {
+    "timeoutMs": 15000,
+    "attempts": 3,
+    "backoffMs": [5000, 10000],
+    "slowMs": 4000
+  },
+  "components": [
+    {
+      "id": "app",
+      "name": "Delegate app",
+      "description": "Signing in and every workspace page.",
+      "critical": true,
+      "url": "https://app.delegateau.com/login",
+      "accept": "text/html",
+      "expect": { "status": 200, "contains": "<div id=\"root\"" }
+    },
+    {
+      "id": "api",
+      "name": "API and database",
+      "description": "The service behind the app, including a live database query.",
+      "critical": true,
+      "url": "https://app.delegateau.com/api/health",
+      "accept": "application/json",
+      "expect": {
+        "status": 200,
+        "json": { "db": "ok" },
+        "softJson": { "db": ["opening"] },
+        "softReason": "Answered, but the database was still starting",
+        "failReason": "Answered, but the database did not report ready"
+      }
+    },
+    {
+      "id": "site",
+      "name": "Website",
+      "description": "Our public website, delegateau.com.",
+      "critical": false,
+      "url": "https://www.delegateau.com/",
+      "accept": "text/html",
+      "expect": { "status": 200, "contains": "Delegate" }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+# The built page is published by the workflow, never committed.
+_site/
+# Local review material: screenshots, throwaway data, scripts that use tools from elsewhere.
+.review/
+.scratch/
+node_modules/
+*.tmp

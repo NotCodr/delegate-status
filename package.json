@@ -1,0 +1,12 @@
+{
+  "name": "delegate-status",
+  "private": true,
+  "description": "The public status page for Delegate: checks every five minutes, keeps the record in this repository, publishes a static page.",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "render": "node scripts/render.mjs",
+    "test": "node --test \"test/*.test.mjs\""
+  }
+}

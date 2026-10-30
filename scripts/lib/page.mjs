@@ -428,7 +428,7 @@ ${components.map((c) => componentHtml(c, model.nowMs)).join("\n")}
 </main>
 <footer>
 <p>Checked about every five minutes by a monitor outside our hosting, in the United States. Times are Australian Eastern time. ${esc(sinceLine)}</p>
-<p><a href="https://www.delegateau.com/">delegateau.com</a> · <a href="https://app.delegateau.com/login">Sign in</a> · <a href="feed.xml">Subscribe to updates</a> · Problems? <a href="mailto:sri@delegateau.com">sri@delegateau.com</a></p>
+<p><a href="https://www.delegateau.com/">delegateau.com</a> · <a href="https://app.delegateau.com/login">Sign in</a> · <a href="feed.xml">Subscribe to updates</a> · Problems? <a href="mailto:support@delegateau.com">support@delegateau.com</a></p>
 </footer>
 </div>
 <script>${JS}</script>

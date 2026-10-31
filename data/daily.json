@@ -2,6 +2,6 @@
   "since": "2026-10-30",
   "days": {
     "2026-10-30": {"app":{"checks":4,"up":4,"degraded":0,"down":0,"median":344,"downMin":0},"api":{"checks":4,"up":4,"degraded":0,"down":0,"median":383,"downMin":0},"site":{"checks":4,"up":4,"degraded":0,"down":0,"median":218,"downMin":0}},
-    "2026-10-31": {"app":{"checks":32,"up":32,"degraded":0,"down":0,"median":460,"downMin":0},"api":{"checks":32,"up":32,"degraded":0,"down":0,"median":428,"downMin":0},"site":{"checks":32,"up":32,"degraded":0,"down":0,"median":306,"downMin":0}}
+    "2026-10-31": {"app":{"checks":33,"up":33,"degraded":0,"down":0,"median":466,"downMin":0},"api":{"checks":33,"up":33,"degraded":0,"down":0,"median":426,"downMin":0},"site":{"checks":33,"up":33,"degraded":0,"down":0,"median":313,"downMin":0}}
   }
 }

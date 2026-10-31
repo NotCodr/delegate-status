@@ -149,5 +149,6 @@
 {"t":"2026-10-31T10:55:16.958Z","r":{"app":{"s":"up","ms":457,"code":200,"n":1},"api":{"s":"up","ms":410,"code":200,"n":1},"site":{"s":"up","ms":393,"code":200,"n":1}}},
 {"t":"2026-10-31T11:00:40.725Z","r":{"app":{"s":"up","ms":979,"code":200,"n":1},"api":{"s":"up","ms":803,"code":200,"n":1},"site":{"s":"up","ms":559,"code":200,"n":1}}},
 {"t":"2026-10-31T11:05:16.268Z","r":{"app":{"s":"up","ms":636,"code":200,"n":1},"api":{"s":"up","ms":391,"code":200,"n":1},"site":{"s":"up","ms":312,"code":200,"n":1}}},
-{"t":"2026-10-31T11:10:20.166Z","r":{"app":{"s":"up","ms":296,"code":200,"n":1},"api":{"s":"up","ms":455,"code":200,"n":1},"site":{"s":"up","ms":193,"code":200,"n":1}}}
+{"t":"2026-10-31T11:10:20.166Z","r":{"app":{"s":"up","ms":296,"code":200,"n":1},"api":{"s":"up","ms":455,"code":200,"n":1},"site":{"s":"up","ms":193,"code":200,"n":1}}},
+{"t":"2026-10-31T11:16:03.156Z","r":{"app":{"s":"degraded","ms":4941,"code":200,"n":1,"why":"Answered slowly, in 4.9 seconds"},"api":{"s":"degraded","ms":4713,"code":200,"n":1,"why":"Answered slowly, in 4.7 seconds"},"site":{"s":"degraded","ms":4710,"code":200,"n":1,"why":"Answered slowly, in 4.7 seconds"}}}
 ]

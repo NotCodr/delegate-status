@@ -233,5 +233,6 @@
 {"t":"2026-11-04T08:20:24.379Z","r":{"app":{"s":"up","ms":719,"code":200,"n":1},"api":{"s":"up","ms":590,"code":200,"n":1},"site":{"s":"up","ms":277,"code":200,"n":1}}},
 {"t":"2026-11-04T08:25:18.923Z","r":{"app":{"s":"up","ms":561,"code":200,"n":1},"api":{"s":"up","ms":406,"code":200,"n":1},"site":{"s":"up","ms":356,"code":200,"n":1}}},
 {"t":"2026-11-04T08:30:33.644Z","r":{"app":{"s":"up","ms":557,"code":200,"n":1},"api":{"s":"up","ms":524,"code":200,"n":1},"site":{"s":"up","ms":144,"code":200,"n":1}}},
-{"t":"2026-11-04T08:35:23.592Z","r":{"app":{"s":"down","ms":null,"code":0,"n":3,"why":"Could not connect"},"api":{"s":"down","ms":null,"code":0,"n":3,"why":"Could not connect"},"site":{"s":"up","ms":456,"code":200,"n":1}}}
+{"t":"2026-11-04T08:35:23.592Z","r":{"app":{"s":"down","ms":null,"code":0,"n":3,"why":"Could not connect"},"api":{"s":"down","ms":null,"code":0,"n":3,"why":"Could not connect"},"site":{"s":"up","ms":456,"code":200,"n":1}}},
+{"t":"2026-11-04T08:40:20.410Z","r":{"app":{"s":"up","ms":552,"code":200,"n":1},"api":{"s":"up","ms":530,"code":200,"n":1},"site":{"s":"up","ms":175,"code":200,"n":1}}}
 ]

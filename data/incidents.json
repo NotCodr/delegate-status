@@ -1,5 +1,6 @@
 [
 {"id":"api-202610310405","component":"api","start":"2026-10-31T04:05:15.452Z","end":"2026-10-31T04:10:21.474Z","last":"2026-10-31T04:05:15.452Z","checks":1,"why":"Could not connect","issue":1},
 {"id":"app-202611040835","component":"app","start":"2026-11-04T08:35:23.592Z","end":"2026-11-04T08:40:20.410Z","last":"2026-11-04T08:35:23.592Z","checks":1,"why":"Could not connect","issue":2},
-{"id":"api-202611040835","component":"api","start":"2026-11-04T08:35:23.592Z","end":"2026-11-04T08:40:20.410Z","last":"2026-11-04T08:35:23.592Z","checks":1,"why":"Could not connect","issue":3}
+{"id":"api-202611040835","component":"api","start":"2026-11-04T08:35:23.592Z","end":"2026-11-04T08:40:20.410Z","last":"2026-11-04T08:35:23.592Z","checks":1,"why":"Could not connect","issue":3},
+{"id":"app-202611090620","component":"app","start":"2026-11-09T06:20:21.525Z","end":null,"last":"2026-11-09T06:20:21.525Z","checks":1,"why":"Answered HTTP 403 instead of 200","issue":4}
 ]

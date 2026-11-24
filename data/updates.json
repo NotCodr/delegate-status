@@ -1,7 +1,4 @@
 {
-  "fetched": "2026-11-24T13:00:54.801Z",
-  "issues": [
-  {"number":6,"manual":false,"maintenance":false,"assoc":null,"bot":true,"title":null,"body":null,"state":"closed","created":"2026-11-09T17:55:37Z","closed":"2026-11-09T18:00:54Z","updates":[]},
-  {"number":7,"manual":false,"maintenance":false,"assoc":null,"bot":true,"title":null,"body":null,"state":"closed","created":"2026-11-09T17:55:38Z","closed":"2026-11-09T18:00:56Z","updates":[]}
-  ]
+  "fetched": "2026-11-24T19:00:44.604Z",
+  "issues": []
 }

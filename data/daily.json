@@ -30,6 +30,6 @@
     "2026-11-25": {"app":{"checks":5,"up":5,"degraded":0,"down":0,"median":404,"downMin":0},"api":{"checks":5,"up":5,"degraded":0,"down":0,"median":384,"downMin":0},"site":{"checks":5,"up":5,"degraded":0,"down":0,"median":260,"downMin":0}},
     "2026-11-26": {"app":{"checks":7,"up":7,"degraded":0,"down":0,"median":402,"downMin":0},"api":{"checks":7,"up":7,"degraded":0,"down":0,"median":517,"downMin":0},"site":{"checks":7,"up":7,"degraded":0,"down":0,"median":237,"downMin":0}},
     "2026-11-27": {"app":{"checks":6,"up":6,"degraded":0,"down":0,"median":465,"downMin":0},"api":{"checks":6,"up":6,"degraded":0,"down":0,"median":416,"downMin":0},"site":{"checks":6,"up":6,"degraded":0,"down":0,"median":253,"downMin":0}},
-    "2026-11-28": {"app":{"checks":2,"up":2,"degraded":0,"down":0,"median":403,"downMin":0},"api":{"checks":2,"up":2,"degraded":0,"down":0,"median":453,"downMin":0},"site":{"checks":2,"up":2,"degraded":0,"down":0,"median":267,"downMin":0}}
+    "2026-11-28": {"app":{"checks":3,"up":3,"degraded":0,"down":0,"median":366,"downMin":0},"api":{"checks":3,"up":3,"degraded":0,"down":0,"median":401,"downMin":0},"site":{"checks":3,"up":3,"degraded":0,"down":0,"median":273,"downMin":0}}
   }
 }
